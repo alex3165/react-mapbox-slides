@@ -1,24 +1,39 @@
 import React from 'react';
-import { Slide, Heading, List, ListItem } from 'spectacle';
-import ReactMapboxGl, { Layer, Feature } from "react-mapbox-gl";
+import { Slide } from 'spectacle';
+import ReactMapboxGl, { Layer } from "react-mapbox-gl";
 
 export default class RasterVector extends React.Component {
   render() {
     return (
       <Slide>
         <ReactMapboxGl
-          style="mapbox://styles/alex3165/cixouinss00332smv840072s6"
-          accessToken="pk.eyJ1IjoiYWxleDMxNjUiLCJhIjoiY2l4b3V1YjgxMDAxZzMycG94ajRydGJ2ciJ9.ENIGGEe_9pIKS3hZFY9teg"
+          style="mapbox://styles/mapbox/light-v9"
+          accessToken="pk.eyJ1IjoiYWxleDMxNjUiLCJhIjoiY2l4b3V0Z3RpMDAxczJ4cWk2YnEzNTVzYSJ9.MFPmOyHy8DM5_CVaqPYhOg"
           containerStyle={{
-            height: 300,
-            width: '100%'
+            width: '100%',
+            height: 500
           }}>
             <Layer
-              type="symbol"
-              id="marker"
-              layout={{ "icon-image": "marker-15" }}>
-              <Feature coordinates={[-0.481747846041145, 51.3233379650232]}/>
-            </Layer>
+              id="3d-buildings"
+              sourceId="composite"
+              layerOptions={{
+                'source-layer': 'building',
+                'filter': ['==', 'extrude', 'true'],
+                'type': 'fill-extrusion',
+                'minzoom': 15
+              }}
+              paint={{
+                'fill-extrusion-color': '#aaa',
+                'fill-extrusion-height': {
+                    'type': 'identity',
+                    'property': 'height'
+                },
+                'fill-extrusion-base': {
+                    'type': 'identity',
+                    'property': 'min_height'
+                },
+                'fill-extrusion-opacity': .6
+              }}/>
         </ReactMapboxGl>
       </Slide>
     );
