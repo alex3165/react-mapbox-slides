@@ -6,7 +6,7 @@ export default class RasterVector extends React.Component {
   render() {
     return (
       <CodeSlide
-        transition={[]}
+        transition={['zoom']}
         lang="js"
         code={require("./05-code.example")}
         ranges={[

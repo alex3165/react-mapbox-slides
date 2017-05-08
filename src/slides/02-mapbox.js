@@ -4,7 +4,7 @@ import { Slide, Heading, List, ListItem } from 'spectacle';
 export default class Mapbox extends React.Component {
   render() {
     return (
-      <Slide>
+      <Slide transition={["zoom"]}>
         <Heading size={1} fit caps lineHeight={1} textColor="tertiary">
           What's Mapbox ?
         </Heading>

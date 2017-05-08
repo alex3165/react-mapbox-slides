@@ -14,7 +14,7 @@ import theme from './theme';
 class App extends React.Component {
   render() {
     return (
-      <Deck transition={["zoom", "slide"]} transitionDuration={500} theme={theme}>
+      <Deck transition={["slide", "fade"]} controls={false} theme={theme}>
         <Introduction/>
         <DisplayMap/>
         <Mapbox/>

@@ -5,7 +5,7 @@ import ReactMapboxGl, { Layer } from "react-mapbox-gl";
 export default class RasterVector extends React.Component {
   render() {
     return (
-      <Slide>
+      <Slide transition={["zoom"]}>
         <ReactMapboxGl
           style="mapbox://styles/mapbox/light-v9"
           accessToken="pk.eyJ1IjoiYWxleDMxNjUiLCJhIjoiY2l4b3V0Z3RpMDAxczJ4cWk2YnEzNTVzYSJ9.MFPmOyHy8DM5_CVaqPYhOg"

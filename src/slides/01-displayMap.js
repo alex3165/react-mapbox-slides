@@ -1,11 +1,10 @@
 import React from 'react';
 import { Slide, Heading, List, ListItem } from 'spectacle';
-// import styled from 'styled-components';
 
 export default class DisplayMap extends React.Component {
   render() {
     return (
-      <Slide>
+      <Slide transition={["zoom"]}>
         <Heading size={1} fit caps lineHeight={1} textColor="tertiary">
           Who is using web map ?
         </Heading>

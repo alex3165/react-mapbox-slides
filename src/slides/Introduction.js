@@ -17,7 +17,7 @@ const Item = styled.div`
 export default class Introduction extends React.Component {
   render() {
     return (
-      <Slide>
+      <Slide transition={["zoom"]}>
         <Heading size={1} fit caps lineHeight={1} textColor="secondary">
           Build webgl map with Mapbox and React
         </Heading>

@@ -4,7 +4,7 @@ import { Slide, Heading, List, ListItem, Appear } from 'spectacle';
 export default class RasterVector extends React.Component {
   render() {
     return (
-      <Slide>
+      <Slide transition={["zoom"]}>
         <Heading size={1} fit caps lineHeight={1} textColor="tertiary">
           Two approaches
         </Heading>
