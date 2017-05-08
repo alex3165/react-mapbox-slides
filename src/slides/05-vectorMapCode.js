@@ -12,7 +12,8 @@ export default () => (
     ranges={[
       { loc: [0, 1], title: "First we import" },
       { loc: [4, 5], title: "We set the map token" },
-      { loc: [6, 12], title: "We Instantiate mapboxgl" }
+      { loc: [6, 12], title: "We Instantiate mapboxgl" },
+      { loc: [13, 35], title: "Add 3d building layer" }
     ]}
   />
 )
