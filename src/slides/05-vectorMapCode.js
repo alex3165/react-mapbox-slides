@@ -1,17 +1,18 @@
 import React from 'react';
-import { Slide } from 'spectacle';
-import CodeSlide from 'spectacle-code-slide';
+import code from './05-code.raw';
+import WrappedCodeSlide from '../CodeSlide';
+import { navy } from '../colors';
 
-export default class RasterVector extends React.Component {
-  render() {
-    return (
-      <CodeSlide
-        transition={['zoom']}
-        lang="js"
-        code={require("./05-code.example")}
-        ranges={[
-          { loc: [0, 1], title: "The Beginning" }
-        ]}/>
-    );
-  }
-};
+export default () => (
+  <WrappedCodeSlide
+    transition={[]}
+    lang="js"
+    code={code}
+    bgColor={navy.toString()}
+    ranges={[
+      { loc: [0, 1], title: "First we import" },
+      { loc: [4, 5], title: "We set the map token" },
+      { loc: [6, 12], title: "We Instantiate mapboxgl" }
+    ]}
+  />
+)

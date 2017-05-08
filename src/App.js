@@ -1,26 +1,39 @@
 import React from 'react';
-import Introduction from './slides/Introduction';
-import DisplayMap from './slides/01-displayMap';
-import Mapbox from './slides/02-mapbox';
-import RasterVector from './slides/03-rasterVsVectorTiles';
-import VectorMap from './slides/04-vectorMap';
-import VectorMapCode from './slides/05-vectorMapCode';
+
+import intro from './slides/Introduction';
+import displayMap from './slides/01-displayMap';
+import mapbox from './slides/02-mapbox';
+import rasterVector from './slides/03-rasterVsVectorTiles';
+import vectorMap from './slides/04-vectorMap';
+import vectorMapCode from './slides/05-vectorMapCode';
 
 import './base.css';
 
 import { Deck } from "spectacle";
 import theme from './theme';
+import merge from './merge';
+
+const makeSlides = () => {
+  const slides = merge(
+    intro(),
+    displayMap(),
+    mapbox(),
+    rasterVector(),
+    vectorMap(),
+    vectorMapCode(),
+    () => <div/>
+  );
+
+  return slides;
+};
 
 class App extends React.Component {
   render() {
     return (
       <Deck transition={["slide", "fade"]} controls={false} theme={theme}>
-        <Introduction/>
-        <DisplayMap/>
-        <Mapbox/>
-        <RasterVector/>
-        <VectorMap/>
-        <VectorMapCode/>
+        {
+          makeSlides()
+        }
       </Deck>
     );
   }

@@ -7,3 +7,11 @@
   left: 0;
   top: 0;
 }
+
+.token.comment {
+  color: white !important;
+}
+
+code > div {
+  color: white;
+}
