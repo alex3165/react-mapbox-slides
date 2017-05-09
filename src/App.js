@@ -1,11 +1,16 @@
 import React from 'react';
 
-import intro from './slides/Introduction';
+import intro from './slides/00-Introduction';
 import displayMap from './slides/01-displayMap';
 import mapbox from './slides/02-mapbox';
 import rasterVector from './slides/03-rasterVsVectorTiles';
 import vectorMap from './slides/04-vectorMap';
 import vectorMapCode from './slides/05-vectorMapCode';
+import reactIntegration from './slides/06-reactIntegration';
+import reactify from './slides/07-reactify';
+import reactMapboxGl from './slides/08-reactMapboxGl';
+import londonCycleExample from './slides/09-londonCycleExample';
+import londonCycleCode from './slides/10-londonCycleCode';
 
 import './base.css';
 
@@ -21,7 +26,11 @@ const makeSlides = () => {
     rasterVector(),
     vectorMap(),
     vectorMapCode(),
-    () => <div/>
+    reactIntegration(),
+    reactify(),
+    reactMapboxGl(),
+    londonCycleExample(),
+    londonCycleCode()
   );
 
   return slides;

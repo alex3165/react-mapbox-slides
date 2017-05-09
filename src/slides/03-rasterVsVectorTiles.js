@@ -11,7 +11,7 @@ export default () => (
         <ListItem>Raster tiles: PNG, DOM, small bundle size</ListItem>
       </Appear>
       <Appear>
-        <ListItem>Vector tiles: SVG, CANVAS (WebGl), zoom interolation, higly customizable</ListItem>
+        <ListItem>Vector tiles: SVG, CANVAS (WebGl), zoom interpolation, higly customizable</ListItem>
       </Appear>
     </List>
   </Slide>

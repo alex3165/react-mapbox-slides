@@ -129,9 +129,6 @@ module.exports = {
       {
         test: /\.(js|jsx)$/,
         include: paths.appSrc,
-        exclude: [
-          /raw\.(js|jsx)$/
-        ],
         loader: 'babel',
         query: {
           

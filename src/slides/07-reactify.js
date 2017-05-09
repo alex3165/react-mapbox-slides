@@ -1,5 +1,5 @@
 import React from 'react';
-import code from './05-code.raw';
+import code from './07-code.raw';
 import WrappedCodeSlide from '../CodeSlide';
 import { navy } from '../colors';
 
@@ -10,10 +10,8 @@ export default () => (
     code={code}
     bgColor={navy.toString()}
     ranges={[
-      { loc: [0, 1] },
-      { loc: [4, 5] },
-      { loc: [6, 12] },
-      { loc: [13, 35] }
+      { loc: [5, 19] },
+      { loc: [20, 27] }
     ]}
   />
 )
