@@ -1,0 +1,11 @@
+import React from 'react';
+import { Heading, Slide, Text, Link } from 'spectacle';
+
+export default () => (
+  <Slide transition={["zoom"]}>
+    <Heading size={1} fit caps lineHeight={1} textColor="tertiary">
+      Mapbox studio
+    </Heading>
+    <Text>Customise 100% of the content of your map!</Text>
+  </Slide>
+)

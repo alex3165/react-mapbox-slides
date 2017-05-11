@@ -2,6 +2,7 @@ import { parseString } from "xml2js";
 import { Map } from "immutable";
 import React from "react";
 import ReactMapboxGl, { Layer, Feature, Popup } from "react-mapbox-gl";
+import { marine, fern } from '../colors';
 
 // Fetch bike stations from tfl
 function getCycleStations() {
@@ -30,19 +31,28 @@ const styles = {
     bottom: 0,
     left: 0,
     right: 0,
-    padding: "16px 0px",
+    padding: "10px 30px",
     textAlign: "center",
-    backgroundColor: "white"
+    backgroundColor: "white",
+    display: 'flex',
+    justifyContent: 'space-between'
   },
   popup: {
-    background: "#fff",
-    color: 'black',
+    background: 'white',
+    color: marine.toString(),
+    fontWeight: 400,
     padding: "5px",
     borderRadius: "2px"
   },
-  p: {
-    color: 'black',
-    fontSize: 18,
+  p1: {
+    color: fern.toString(),
+    fontSize: 20,
+    fontWeight: 'bold',
+    margin: '5px 0px'
+  },
+  p2: {
+    color: marine.toString(),
+    fontSize: 14,
     margin: '5px 0px'
   }
 };
@@ -106,17 +116,17 @@ export default class LondonCycle extends React.Component {
     return (
       <div style={{ position: 'relative' }}>
         <ReactMapboxGl
-          style="mapbox://styles/mapbox/streets-v10"
+          style="mapbox://styles/alex3165/cj2hv9v4y00242slphcyk9oca"
           center={center}
           zoom={zoom}
-          accessToken="pk.eyJ1IjoiYWxleDMxNjUiLCJhIjoiY2l4b3V0Z3RpMDAxczJ4cWk2YnEzNTVzYSJ9.MFPmOyHy8DM5_CVaqPYhOg"
+          accessToken="pk.eyJ1IjoiYWxleDMxNjUiLCJhIjoiY2l4b3V1YjgxMDAxZzMycG94ajRydGJ2ciJ9.ENIGGEe_9pIKS3hZFY9teg"
           onDrag={this._onDrag}
           containerStyle={styles.container}>
 
           <Layer
             type="symbol"
             id="marker"
-            layout={{ "icon-image": "star-15" }}>
+            layout={{ "icon-image": "bike" }}>
             {
               stations
                 .map((st, index) => (
@@ -151,8 +161,8 @@ export default class LondonCycle extends React.Component {
         {
           station && (
             <div style={styles.stationDescription}>
-              <p style={styles.p}>{ station.get("name") }</p>
-              <p style={styles.p}>{ station.get("bikes") } bikes / { station.get("slots") } slots</p>
+              <p style={styles.p1}>{ station.get("name") }</p>
+              <p style={styles.p2}>{ station.get("bikes") } bikes / { station.get("slots") } slots</p>
             </div>
           )
         }

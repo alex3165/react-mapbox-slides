@@ -11,6 +11,8 @@ import reactify from './slides/07-reactify';
 import reactMapboxGl from './slides/08-reactMapboxGl';
 import londonCycleExample from './slides/09-londonCycleExample';
 import londonCycleCode from './slides/10-londonCycleCode';
+import mapboxStudio from './slides/11-customiseMap';
+import monumap from './slides/12-monumap';
 
 import './base.css';
 
@@ -30,7 +32,9 @@ const makeSlides = () => {
     reactify(),
     reactMapboxGl(),
     londonCycleExample(),
-    londonCycleCode()
+    londonCycleCode(),
+    mapboxStudio(),
+    monumap()
   );
 
   return slides;
