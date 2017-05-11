@@ -1,11 +1,11 @@
 import createTheme from "spectacle/lib/themes/default";
 
-import { navy, white, fern, snow, sky, mint } from './colors';
+import { navy, white, ivy, snow, sky, mint, marine, delta } from './colors';
 import { fontFamily, fallback } from './fonts';
 
 const theme = createTheme({
-  primary: fern.toString(),
-  secondary: snow.toString(),
+  primary: marine.toString(),
+  secondary: mint.toString(),
   tertiary: snow.toString(),
   quartenary: mint.lighten(0.4).toString()
 }, {

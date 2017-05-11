@@ -2,7 +2,7 @@ import React from 'react';
 import { Heading, Slide, Text, Link } from 'spectacle';
 
 export default () => (
-  <Slide transition={["zoom"]}>
+  <Slide transition={["slide"]}>
     <Heading size={1} fit caps lineHeight={1} textColor="tertiary">
       Mapbox studio
     </Heading>

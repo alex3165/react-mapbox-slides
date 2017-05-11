@@ -2,8 +2,8 @@ import React from 'react';
 import { Slide, Heading, List, ListItem } from 'spectacle';
 
 export default () => (
-  <Slide transition={["zoom"]}>
-    <Heading>
+  <Slide transition={["slide"]}>
+    <Heading size={1} fit caps lineHeight={1} textColor="tertiary">
       Using React-mapbox-gl
     </Heading>
 

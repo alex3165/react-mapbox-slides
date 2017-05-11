@@ -5,7 +5,7 @@ import { navy } from '../colors';
 
 export default () => (
   <WrappedCodeSlide
-    transition={[]}
+    transition={['zoom']}
     lang="js"
     code={code}
     bgColor={navy.toString()}

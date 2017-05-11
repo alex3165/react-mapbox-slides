@@ -5,13 +5,13 @@ import { navy } from '../colors';
 
 export default () => (
   <WrappedCodeSlide
-    transition={[]}
+    transition={['slide']}
     lang="js"
     code={code}
     bgColor={navy.toString()}
     ranges={[
-      { loc: [0, 1] },
-      { loc: [4, 5] },
+      { loc: [0, 1], title: 'Vector map implementation' },
+      { loc: [4, 5], title: 'Vector map implementation' },
       { loc: [6, 12] },
       { loc: [13, 35] }
     ]}

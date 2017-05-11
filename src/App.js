@@ -4,6 +4,7 @@ import intro from './slides/00-Introduction';
 import displayMap from './slides/01-displayMap';
 import mapbox from './slides/02-mapbox';
 import rasterVector from './slides/03-rasterVsVectorTiles';
+import rasterMap from './slides/04-rasterMap';
 import vectorMap from './slides/04-vectorMap';
 import vectorMapCode from './slides/05-vectorMapCode';
 import reactIntegration from './slides/06-reactIntegration';
@@ -13,6 +14,11 @@ import londonCycleExample from './slides/09-londonCycleExample';
 import londonCycleCode from './slides/10-londonCycleCode';
 import mapboxStudio from './slides/11-customiseMap';
 import monumap from './slides/12-monumap';
+import monumapCode from './slides/12-monumapCode';
+import datavisualisation from './slides/13-datavisualisation';
+import deckglExample from './slides/13-deckglExample';
+import conclusion from './slides/14-conclusion';
+import thanks from './slides/15-thanks';
 
 import './base.css';
 
@@ -26,6 +32,7 @@ const makeSlides = () => {
     displayMap(),
     mapbox(),
     rasterVector(),
+    rasterMap(),
     vectorMap(),
     vectorMapCode(),
     reactIntegration(),
@@ -34,7 +41,12 @@ const makeSlides = () => {
     londonCycleExample(),
     londonCycleCode(),
     mapboxStudio(),
-    monumap()
+    monumap(),
+    monumapCode(),
+    datavisualisation(),
+    deckglExample(),
+    conclusion(),
+    thanks()
   );
 
   return slides;

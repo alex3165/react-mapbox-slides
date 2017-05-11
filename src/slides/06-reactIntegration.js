@@ -2,7 +2,7 @@ import React from 'react';
 import { Slide, Heading, List, ListItem } from 'spectacle';
 
 export default () => (
-  <Slide transition={["zoom"]}>
+  <Slide transition={["slide"]}>
     <Heading>
       React integration
     </Heading>

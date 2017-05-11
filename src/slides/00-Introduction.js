@@ -16,8 +16,8 @@ const Item = styled.div`
 
 export default () => (
   <Slide transition={["zoom"]}>
-    <Heading size={1} fit caps lineHeight={1} textColor="secondary">
-      Build webgl map with Mapbox and React
+    <Heading size={4} fit caps lineHeight={2} textColor="tertiary">
+      WebGl map with Mapbox and React
     </Heading>
     <Line>
       <Item>
