@@ -6,12 +6,10 @@ export default () => (
     <Heading size={1} fit caps lineHeight={1} textColor="tertiary">
       Using React-mapbox-gl
     </Heading>
-
     <List>
-      <ListItem>Projected layers (Popup, Marker, Cluster)</ListItem>
-      <ListItem>All update of props abstracted for you</ListItem>
-      <ListItem>Written in Typescript</ListItem>
+      <ListItem textSize={38}>Projected components: Popup, Marker, Cluster</ListItem>
+      <ListItem textSize={38}>Fake components: Layer, Source, Feature ...</ListItem>
+      <ListItem textSize={38}>Referenced on mapbox.com</ListItem>
     </List>
-
   </Slide>
 );

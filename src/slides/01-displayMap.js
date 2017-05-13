@@ -7,8 +7,8 @@ export default () => (
       Who is using web map ?
     </Heading>
     <List>
-      <ListItem>Simple contact page</ListItem>
-      <ListItem>Complexe business logic: Deliveroo, Uber, Citymapper, Airbnb</ListItem>
+      <ListItem textSize={38}>Contact page</ListItem>
+      <ListItem textSize={38}>Core component: Deliveroo, Uber, Citymapper, Airbnb</ListItem>
     </List>
   </Slide>
 );

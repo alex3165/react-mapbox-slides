@@ -6,11 +6,9 @@ export default () => (
     <Heading>
       React integration
     </Heading>
-
     <List>
-      <ListItem>API not declarative</ListItem>
-      <ListItem>Lots of update logic</ListItem>
+      <ListItem>Declarative API</ListItem>
+      <ListItem>Updates of props abstracted for you</ListItem>
     </List>
-
   </Slide>
 );

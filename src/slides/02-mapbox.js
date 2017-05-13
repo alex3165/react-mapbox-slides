@@ -3,14 +3,14 @@ import { Slide, Heading, List, ListItem } from 'spectacle';
 
 export default () => (
   <Slide transition={["slide"]}>
-    <Heading size={1} fit caps lineHeight={1} textColor="tertiary">
+    <Heading fit caps lineHeight={1} textColor="tertiary">
       What's Mapbox ?
     </Heading>
 
     <List>
-      <ListItem>A company</ListItem>
-      <ListItem>Provide tools for building a map</ListItem>
-      <ListItem>Use Openstreetmap data</ListItem>
+      <ListItem>A company in the Valley</ListItem>
+      <ListItem>Provide a complete GIS</ListItem>
+      <ListItem>Data: From the comunity (OSM)</ListItem>
     </List>
   </Slide>
 );

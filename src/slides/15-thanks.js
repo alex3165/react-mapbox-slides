@@ -1,5 +1,7 @@
 import React from 'react';
-import { Heading, Slide, List, ListItem } from 'spectacle';
+import { Heading, Slide, List, ListItem, Text } from 'spectacle';
+import BottomLine from '../BottomLine';
+import { white } from '../colors';
 
 const containerStyle = {
   height: 500,
@@ -8,9 +10,7 @@ const containerStyle = {
 
 export default () => (
   <Slide transition={["slide"]}>
-    <Heading size={1} fit caps lineHeight={1} textColor="tertiary">
-      Thanks
-    </Heading>
-
+    <Text textColor={white}>Little bit more: github.com/alex3165/react-mapbox-gl</Text>
+    <BottomLine/>
   </Slide>
 );

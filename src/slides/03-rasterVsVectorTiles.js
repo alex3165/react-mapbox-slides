@@ -8,10 +8,10 @@ export default () => (
     </Heading>
     <List type="1">
       <Appear>
-        <ListItem>Raster tiles: PNG, DOM, small bundle size</ListItem>
+        <ListItem>DOM / Raster tiles: PNG, small bundle size</ListItem>
       </Appear>
       <Appear>
-        <ListItem>Vector tiles: SVG, CANVAS (WebGl), zoom interpolation, higly customizable</ListItem>
+        <ListItem>CANVAS (WebGl) / Vector tiles: SVG, zoom interpolation, higly customizable</ListItem>
       </Appear>
     </List>
   </Slide>

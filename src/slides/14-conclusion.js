@@ -9,8 +9,11 @@ const containerStyle = {
 export default () => (
   <Slide transition={["slide"]}>
     <Heading size={1} fit caps lineHeight={1} textColor="tertiary">
-      Many other tools around maps
+      More around map
     </Heading>
-
+    <List>
+      <ListItem>Geocoding: Address (string) -> Coordinates</ListItem>
+      <ListItem>Routing: Calculate paths</ListItem>
+    </List>
   </Slide>
 );
