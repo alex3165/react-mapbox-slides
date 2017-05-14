@@ -8,7 +8,7 @@ export default () => (
     </Heading>
     <List type="1">
       <Appear>
-        <ListItem>DOM / Raster tiles: PNG, small bundle size</ListItem>
+        <ListItem>DOM / Raster tiles: PNG, small bundle size, SSR</ListItem>
       </Appear>
       <Appear>
         <ListItem>CANVAS (WebGl) / Vector tiles: SVG, zoom interpolation, higly customizable</ListItem>
