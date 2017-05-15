@@ -14,6 +14,7 @@ export default () => (
     <List>
       <ListItem>Geocoding: Address (string) -> Coordinates</ListItem>
       <ListItem>Routing: Calculate paths</ListItem>
+      <ListItem>Mapbox-gl-draw: Drawing shapes on your map</ListItem>
     </List>
   </Slide>
 );
