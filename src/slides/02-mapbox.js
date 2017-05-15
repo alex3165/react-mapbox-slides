@@ -10,7 +10,7 @@ export default () => (
     <List>
       <ListItem>A company in the Valley</ListItem>
       <ListItem>Provide a complete GIS</ListItem>
-      <ListItem>Data: From the comunity (OSM)</ListItem>
+      <ListItem>Data: From the community (OSM)</ListItem>
     </List>
   </Slide>
 );
