@@ -1,3 +1,7 @@
 module.exports = {
-  themePath: './theme'
+  themePath: './theme',
+  transformWebpackConfig: config => {
+    config.module.noParse = /(mapbox-gl)\.js$/
+    return config
+  }
 }
